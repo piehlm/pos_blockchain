@@ -13,7 +13,7 @@ class ProofOfStake():
 
 	def update(self, publicKeyString, stake):
 		if publicKeyString in self.stakers.keys():
-			self.stakers[publicKeyString] += stakers
+			self.stakers[publicKeyString] += stake
 		else:
 			self.stakers[publicKeyString] = stake
 
